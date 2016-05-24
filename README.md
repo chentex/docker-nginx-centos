@@ -14,6 +14,29 @@ in centos 7 and 6.
 * `centos7/Dockerfile`
 * `centos6/Dockerfile`
 
+## How do I use this images?
+To use this images you must do as follows:
+
+```
+# you can use tags latest, latest-centos7, latest-centos6
+docker pull chentex/docker-nginx-centos:latest
+
+# to run the image just execute
+docker run -d -p 80:80 chentex/docker-nginx-centos:latest
+```
+
+You will have now a docker container running nginx on centos you can look for it with
+
+```
+docker ps
+```
+
+You can log into the container with this command
+
+```
+docker exec -ti <container-id> bash
+```
+
 ## How do I build this images?
 First things first, you can find these docker images in `chentex/docker-nginx-centos`
 but you can also build a specific version on your own, you only need:
@@ -38,5 +61,7 @@ If you want to tag your image use the following command
 ```
 docker build -f Dockerfile -t yourbase/yourname:version .
 ```
-
+---
 For more on docker build reference to the [Documentation](https://docs.docker.com/engine/reference/commandline/build/)
+
+You can get the source from the images in the [Repository](https://github.com/chentex/docker-nginx-centos)
