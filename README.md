@@ -2,6 +2,8 @@
 
 Nginx docker image based on centos official image, versions 6 and 7.
 
+[![](https://images.microbadger.com/badges/image/chentex/docker-nginx-centos.svg)](https://microbadger.com/images/chentex/docker-nginx-centos "Get your own image badge on microbadger.com")
+
 ## What is Nginx?
 Nginx (pronounced "engine x") is a web server. It can act as a reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer and an HTTP cache.
 
