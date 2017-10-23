@@ -10,7 +10,7 @@ Nginx (pronounced "engine x") is a web server. It can act as a reverse proxy ser
 See: [Nginx](http://Nginx.org/)
 
 ## What is inside of this repo?
-In this git repository you will find the docker image definitions for Nginx LTS 1.10
+In this git repository you will find the docker image definitions for Nginx 1.12.1
 in centos 7 and 6.
 
 * `centos7/Dockerfile`
