@@ -1,7 +1,7 @@
 FROM centos:centos7
 MAINTAINER Vicente Zepeda <chente.z.m@gmail.com>
 
-ENV nginxversion="1.10.3-1" \
+ENV nginxversion="1.12.1-1" \
     os="centos" \
     osversion="7"
 
