@@ -1,7 +1,7 @@
 FROM centos:centos6
 LABEL maintainer="Vicente Zepeda <chente.z.m@gmail.com>"
 
-ENV nginxversion="1.12.2-1" \
+ENV nginxversion="1.14.0-1" \
     os="centos" \
     osversion="6"
 
