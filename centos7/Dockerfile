@@ -10,9 +10,11 @@ RUN yum install -y wget openssl sed &&\
     yum -y autoremove &&\
     yum clean all &&\
     wget http://nginx.org/packages/$os/$osversion/x86_64/RPMS/nginx-$nginxversion.el$elversion.ngx.x86_64.rpm &&\
-    rpm -iv nginx-$nginxversion.el$elversion.ngx.x86_64.rpm &&\
-    sed -i '1i\
-    daemon off;\
-    ' /etc/nginx/nginx.conf
+    rpm -iv nginx-$nginxversion.el$elversion.ngx.x86_64.rpm
 
-CMD ["nginx"]
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY index.html /data/www/index.html
+VOLUME [ "/data/www" ]
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]

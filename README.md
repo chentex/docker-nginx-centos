@@ -25,6 +25,9 @@ docker pull chentex/docker-nginx-centos:latest
 
 # to run the image just execute
 docker run -d -p 80:80 chentex/docker-nginx-centos:latest
+
+# to run the with a volume for /data/www
+docker run -d -p 80:80 -v /custom/volume/path:/data/www chentex/docker-nginx-centos:latest
 ```
 
 You will have now a docker container running nginx on centos you can look for it with
